@@ -29,6 +29,9 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
+    <Reference Include="EmailSMSSender">
+      <HintPath>EmailSMSSender.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -66,6 +69,10 @@
     <None Include="refresh.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmailSMSSender\EmailSMSSender.csproj">
+      <Project>{77228BF1-700B-4F94-B687-33FFB9001B62}</Project>
+      <Name>EmailSMSSender</Name>
+    </ProjectReference>
     <ProjectReference Include="EnvRoomControler\EnvRoomControler.csproj">
       <Project>{8E708507-B9BC-451B-97E2-0E99DE0327ED}</Project>
       <Name>EnvRoomControler</Name>

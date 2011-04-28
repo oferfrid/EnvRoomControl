@@ -1,5 +1,0 @@
-D:\Ofer\Learn\BioLab\programing\envRoom\obj\Debug\ResolveAssemblyReference.cache
-D:\Ofer\Learn\BioLab\programing\envRoom\obj\Debug\envRoom.About.resources
-D:\Ofer\Learn\BioLab\programing\envRoom\obj\Debug\envRoom.Option.resources
-D:\Ofer\Learn\BioLab\programing\envRoom\obj\Debug\envRoom.ShowValues.resources
-D:\Ofer\Learn\BioLab\programing\envRoom\obj\Debug\envRoom.csproj.GenerateResource.Cache

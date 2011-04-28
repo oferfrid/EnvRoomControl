@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvRoomControler", "EnvRoom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "envRoom", "envRoom.csproj", "{6A92CCCC-702B-4D0B-A3EC-4E7ED9EBAE6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSMSSender", "..\EmailSMSSender\EmailSMSSender.csproj", "{77228BF1-700B-4F94-B687-33FFB9001B62}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,9 +20,5 @@ Global
 		{6A92CCCC-702B-4D0B-A3EC-4E7ED9EBAE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A92CCCC-702B-4D0B-A3EC-4E7ED9EBAE6D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A92CCCC-702B-4D0B-A3EC-4E7ED9EBAE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77228BF1-700B-4F94-B687-33FFB9001B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77228BF1-700B-4F94-B687-33FFB9001B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77228BF1-700B-4F94-B687-33FFB9001B62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77228BF1-700B-4F94-B687-33FFB9001B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
