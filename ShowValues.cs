@@ -416,7 +416,7 @@ namespace envRoom
 					{
 						try
 						{
-							EmailSMSSender.Sender.SendSMS(AlertsPhone,Error);
+							EmailSMSSender.Sender.SendSMS("+" + AlertsPhone,Error);
 						}
 						catch(Exception e)
 						{

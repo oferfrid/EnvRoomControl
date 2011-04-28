@@ -36,6 +36,7 @@ namespace envRoom
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.btnCancel = new System.Windows.Forms.Button();
 			this.btnApply = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
@@ -44,7 +45,7 @@ namespace envRoom
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.txtPhone = new System.Windows.Forms.TextBox();
+			this.txtPhone = new System.Windows.Forms.MaskedTextBox();
 			this.txtEmail = new System.Windows.Forms.TextBox();
 			this.txtPtime = new System.Windows.Forms.TextBox();
 			this.txtPdiff = new System.Windows.Forms.TextBox();
@@ -53,9 +54,11 @@ namespace envRoom
 			this.checkBoxActiveAlerts = new System.Windows.Forms.CheckBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.OptionErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.OptionErrorProvider)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnCancel
@@ -143,17 +146,23 @@ namespace envRoom
 			// 
 			// txtPhone
 			// 
-			this.txtPhone.Location = new System.Drawing.Point(64, 154);
+			this.txtPhone.Location = new System.Drawing.Point(64, 157);
+			this.txtPhone.Mask = "+(999) 00-0000000";
 			this.txtPhone.Name = "txtPhone";
-			this.txtPhone.Size = new System.Drawing.Size(130, 20);
-			this.txtPhone.TabIndex = 8;
+			this.txtPhone.Size = new System.Drawing.Size(110, 20);
+			this.txtPhone.TabIndex = 9;
+			this.txtPhone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+			this.txtPhone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.TxtPhoneMaskInputRejected);
+			this.txtPhone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtPhoneKeyDown);
+			this.txtPhone.Validated += new System.EventHandler(this.TxtPhoneValidated);
 			// 
 			// txtEmail
 			// 
 			this.txtEmail.Location = new System.Drawing.Point(64, 128);
 			this.txtEmail.Name = "txtEmail";
-			this.txtEmail.Size = new System.Drawing.Size(130, 20);
+			this.txtEmail.Size = new System.Drawing.Size(110, 20);
 			this.txtEmail.TabIndex = 7;
+			this.txtEmail.Validated += new System.EventHandler(this.TxtEmailValidated);
 			// 
 			// txtPtime
 			// 
@@ -208,6 +217,14 @@ namespace envRoom
 			this.label5.TabIndex = 2;
 			this.label5.Text = "Email";
 			// 
+			// label7
+			// 
+			this.label7.Location = new System.Drawing.Point(6, 80);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(134, 23);
+			this.label7.TabIndex = 2;
+			this.label7.Text = "Pressure Time delay [min]";
+			// 
 			// label4
 			// 
 			this.label4.Location = new System.Drawing.Point(6, 60);
@@ -216,13 +233,9 @@ namespace envRoom
 			this.label4.TabIndex = 2;
 			this.label4.Text = "Pressure differential";
 			// 
-			// label7
+			// OptionErrorProvider
 			// 
-			this.label7.Location = new System.Drawing.Point(6, 80);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(134, 23);
-			this.label7.TabIndex = 2;
-			this.label7.Text = "Pressure Time delay [min]";
+			this.OptionErrorProvider.ContainerControl = this;
 			// 
 			// Option
 			// 
@@ -240,11 +253,13 @@ namespace envRoom
 			this.Load += new System.EventHandler(this.OptionLoad);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.OptionErrorProvider)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ErrorProvider OptionErrorProvider;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox txtPhone;
+		private System.Windows.Forms.MaskedTextBox txtPhone;
 		private System.Windows.Forms.TextBox txtEmail;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox txtPtime;
