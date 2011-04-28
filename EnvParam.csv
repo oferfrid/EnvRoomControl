@@ -1,0 +1,4 @@
+ID,1080,3,1082,2,1081,1,1032
+Name,Pressure,PressureSP,Humidity,HumiditySP,Temperature,TemperatureSP,Steam
+LongName,Pressure,Pressure Set Point,Humidity,Humidity Set Point,Temperature,Temperature Set Point,Steam Generator
+ReadOnly,1,0,1,0,1,0,1

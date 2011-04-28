@@ -1,0 +1,5 @@
+D:\Ofer\Learn\BioLab\programing\envRoom\EnvRoomControler\bin\Debug\EnvRoomControler.dll
+D:\Ofer\Learn\BioLab\programing\envRoom\EnvRoomControler\bin\Debug\EnvRoomControler.pdb
+D:\Ofer\Learn\BioLab\programing\envRoom\EnvRoomControler\obj\Debug\ResolveAssemblyReference.cache
+D:\Ofer\Learn\BioLab\programing\envRoom\EnvRoomControler\obj\Debug\EnvRoomControler.dll
+D:\Ofer\Learn\BioLab\programing\envRoom\EnvRoomControler\obj\Debug\EnvRoomControler.pdb
